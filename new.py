@@ -22,6 +22,7 @@ class Student:
     def display(self):
         print("Student Name: {} \n Student Age : {} \n Student rollno: {}".format(self.name,self.age,self.rollno))
 
+print(Student.__doc__)
 s1=Student('Azim',21,'1pse17cs55')
 s2=Student('Hari',21,'1pse17cs89')
 
