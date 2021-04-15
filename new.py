@@ -42,4 +42,6 @@ class Test:
 
 t=Test()
 t.m1()
+
+t.d=40 #adding instance variables outside of a class
 print(t.__dict__)
