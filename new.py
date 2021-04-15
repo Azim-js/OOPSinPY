@@ -69,7 +69,7 @@ print(t1.__dict__)
 t1.m()  #execting inside
 print(t1.__dict__)
 
-del t1.x  #executing outside
+# del t1.x  # executing outside
 
 print(t1.__dict__)
 
@@ -84,4 +84,12 @@ del t3.z
 print(t2.__dict__)
 print(t3.__dict__)
 
+# Instance Variable vs Static Variable
+
+Test1.x=100  # Instance Variable
+
+t1.y=30 # Static Variable
+
+print('t1.x:',t1.x,'t1.y:',t1.y)
+print('t2.x:',t2.x,'t2.y:',t2.y)    
 
