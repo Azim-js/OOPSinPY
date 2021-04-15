@@ -60,3 +60,23 @@ print(Test1.a)
 
 Test1.m2()
 print(Test1.a)
+
+
+class Azim:
+    a=10
+    
+    def __init__(self):
+        self.b=20
+
+    @classmethod
+    def m1(cls):
+        cls.a=888
+        cls.b=999
+
+t1=Azim()
+t2=Azim()
+
+t1.m1()  # the class variable is changed
+print(t1.a,t1.b)
+print(t2.a,t2.b)
+print(Azim.a,Azim.b)
