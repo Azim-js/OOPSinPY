@@ -41,3 +41,22 @@ print(Test.__dict__)
 
 print(Test.a)
 print(t.a)
+
+# modify the value of static variable
+
+class Test1:
+    a=777
+    @classmethod
+    def m1(cls):
+        cls.a=888
+
+    @staticmethod
+    def m2():
+        Test1.a=999
+
+print(Test1.a)
+Test1.m1()
+print(Test1.a)
+
+Test1.m2()
+print(Test1.a)
