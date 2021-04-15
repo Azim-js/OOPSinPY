@@ -39,9 +39,13 @@ class Test:
 
     def m1(self):
         self.c=30
+        print(self.a)
+        print(self.c) #acess inside class
 
 t=Test()
 t.m1()
+print(t.a,t.b) #ouside the class
+
 
 t.d=40 #adding instance variables outside of a class
 print(t.__dict__)
