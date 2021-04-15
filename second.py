@@ -35,3 +35,9 @@ print(Test.__dict__)
 
 Test.f=60
 print(Test.__dict__)
+
+
+# acces Static VAriables
+
+print(Test.a)
+print(t.a)
