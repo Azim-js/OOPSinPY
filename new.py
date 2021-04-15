@@ -72,3 +72,16 @@ print(t1.__dict__)
 del t1.x  #executing outside
 
 print(t1.__dict__)
+
+# using objects
+
+t2=Test1()  
+
+t3=Test1()
+
+del t3.z
+
+print(t2.__dict__)
+print(t3.__dict__)
+
+
