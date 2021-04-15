@@ -49,3 +49,26 @@ print(t.a,t.b) #ouside the class
 
 t.d=40 #adding instance variables outside of a class
 print(t.__dict__)
+
+
+#  how to delete member variables of class 
+# syntax - del self.variablename -inside clas
+#syntax- del objectrefrence.variablename -outsideclass
+
+class Test1:
+
+    def __init__(self):
+        self.x=10
+        self.y=20
+        self.z=30
+
+    def m(self):
+        del self.z
+t1=Test1()
+print(t1.__dict__)
+t1.m()  #execting inside
+print(t1.__dict__)
+
+del t1.x  #executing outside
+
+print(t1.__dict__)
