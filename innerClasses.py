@@ -13,6 +13,7 @@ o=Outer()
 i=o.Inner() #inner class object creation using outer creation
 i.m1() #calling the inner class            
 
+# Demo Program 
 
 class Person:
     def __init__(self):
@@ -35,3 +36,5 @@ p=Person()
 p.display()
 x=p.db
 x.display()       
+
+
