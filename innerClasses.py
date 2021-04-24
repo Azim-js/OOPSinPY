@@ -37,4 +37,31 @@ p.display()
 x=p.db
 x.display()       
 
+# Demo Program a class to declare any number of inner classes 
+
+class Human:
+    def __init__(self):
+        self.name='Sunny'
+        self.head=self.Head()
+        self.brain=self.Brain()
+
+    def display(self):
+        print("hello:",self.name)    
+
+    class Head:
+        def talk(self):
+            print("talking")    
+
+    class Brain:
+        def think(self):
+            print("Thinking.......") 
+
+h=Human()
+h.display()                   
+h.head.talk()
+h.brain.think()
+
+
+
+
 
