@@ -29,3 +29,25 @@ t4=Test()
 t5=Test()
 
 Test.noOfObject()
+
+# PASSING members of one class to another class
+
+class Employee:
+    def __init__(self,eno,ename,esal):
+        self.eno=eno
+        self.ename=ename
+        self.esal=esal
+
+    def display(self):
+        print('Employee Number :',self.eno)    
+        print('Employee Name:',self.ename)
+        print("EMployee Salary:",self.esal)
+
+class Tests:
+    def modify(emp):
+        emp.esal=emp.esal+1000
+        emp.display()
+
+e=Employee(100,'Azim',10000) 
+e.display()    
+Tests.modify(e)
